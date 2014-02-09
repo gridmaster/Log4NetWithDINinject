@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="DIModule\DebugModule.cs" />
     <Compile Include="DIModule\ProductionModule.cs" />
+    <Compile Include="Logger\BaseLogger.cs" />
     <Compile Include="Logger\Log4NetWrapper.cs" />
     <Compile Include="Logger\ConsoleLogger.cs" />
     <Compile Include="DIModule\DesignTimeModule.cs" />

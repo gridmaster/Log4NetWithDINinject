@@ -18,3 +18,23 @@ D:\Projects\LogWriter4\LogWriter4\bin\Debug\Services.dll
 D:\Projects\LogWriter4\LogWriter4\bin\Debug\Core.dll
 D:\Projects\LogWriter4\LogWriter4\bin\Debug\Services.pdb
 D:\Projects\LogWriter4\LogWriter4\bin\Debug\Core.pdb
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\LogWriter4.exe.config
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\obj\Debug\LogWriter4.exe
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\obj\Debug\LogWriter4.pdb
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\LogWriter4.exe
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\LogWriter4.pdb
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Core.dll
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\DIContainer.dll
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\log4net.dll
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Ninject.dll
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Ninject.Extensions.Logging.dll
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Services.dll
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Core.pdb
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\DIContainer.pdb
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Services.pdb
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\log4net.xml
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Ninject.pdb
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Ninject.xml
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Ninject.Extensions.Logging.pdb
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Ninject.Extensions.Logging.xml
+D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\obj\Debug\LogWriter4.csprojResolveAssemblyReference.cache

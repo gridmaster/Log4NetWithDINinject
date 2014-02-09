@@ -4,24 +4,9 @@ using LogWriter4.Core.Interface;
 
 namespace LogWriter4.Logger
 {
-    class ConsoleLogger : ILogger
+    class ConsoleLogger : BaseLogger, ILogger
     {
         #region Properties and ILog Properties
-
-        public LogLevelEnum LogLevel
-        {
-            get { return LogLevelEnum.Debug; }
-            set { }
-        }
-
-        private string TimeStamp
-        {
-            get
-            {
-                string timeStamp = string.Format("{0:HH:mm:ss.fff}", DateTime.Now);
-                return timeStamp;
-            }
-        }
 
         public bool IsDebugEnabled { get { return (LogLevel <= LogLevelEnum.Debug); } }
         public bool IsInfoEnabled { get { return (LogLevel <= LogLevelEnum.Info); } }
@@ -33,8 +18,9 @@ namespace LogWriter4.Logger
 
         #region Constructor Methods
 
-        static ConsoleLogger()
+        public ConsoleLogger(LogLevelEnum loglevel)
         {
+            LogLevel = loglevel;
         }
 
          #endregion
@@ -85,7 +71,11 @@ namespace LogWriter4.Logger
 
         public void Debug(object message)
         {
-            Log(LogWriter4.Logger.LogTypeEnum.DEBUG, (string)message, null);
+            if (!IsDebugEnabled)
+            {
+                return;
+            }
+            Log(LogTypeEnum.DEBUG, (string)message, null);
         }
         public void Debug(object message, Exception exception)
         {
@@ -99,12 +89,16 @@ namespace LogWriter4.Logger
             }
 
             string message = new SystemStringFormat(CultureInfo.InvariantCulture, format, args).ToString();
-            Log(LogWriter4.Logger.LogTypeEnum.DEBUG, message, null);
+            Log(LogTypeEnum.DEBUG, message, null);
         }
 
         public void Info(object message)
         {
-            Log(LogWriter4.Logger.LogTypeEnum.INFO, (string)message, null);
+            if (!IsInfoEnabled)
+            {
+                return;
+            }
+            Log(LogTypeEnum.INFO, (string)message, null);
         }
         public void Info(object message, Exception exception)
         {
@@ -118,11 +112,15 @@ namespace LogWriter4.Logger
             }
 
             string message = new SystemStringFormat(CultureInfo.InvariantCulture, format, args).ToString();
-            Log(LogWriter4.Logger.LogTypeEnum.DEBUG, message, null);
+            Log(LogTypeEnum.INFO, message, null);
         }
         public void Warn(object message)
         {
-            Log(LogWriter4.Logger.LogTypeEnum.WARN, (string)message, null);
+            if (!IsWarnEnabled)
+            {
+                return;
+            }
+            Log(LogTypeEnum.WARN, (string)message, null);
         }
         public void Warn(object message, Exception exception)
         {
@@ -134,14 +132,17 @@ namespace LogWriter4.Logger
             {
                 return;
             }
-
             string message = new SystemStringFormat(CultureInfo.InvariantCulture, format, args).ToString();
-            Log(LogWriter4.Logger.LogTypeEnum.DEBUG, message, null);
+            Log(LogTypeEnum.WARN, message, null);
         }
 
         public void Error(object message)
         {
-            Log(LogWriter4.Logger.LogTypeEnum.ERROR, (string)message, null);
+            if (!IsErrorEnabled)
+            {
+                return;
+            }
+            Log(LogTypeEnum.ERROR, (string)message, null);
         }
         public void Error(object message, Exception exception)
         {
@@ -155,11 +156,15 @@ namespace LogWriter4.Logger
             }
 
             string message = new SystemStringFormat(CultureInfo.InvariantCulture, format, args).ToString();
-            Log(LogWriter4.Logger.LogTypeEnum.DEBUG, message, null);
+            Log(LogTypeEnum.ERROR, message, null);
         }
         public void Fatal(object message)
         {
-            Log(LogWriter4.Logger.LogTypeEnum.FATAL, (string)message, null);
+            if (!IsFatalEnabled)
+            {
+                return;
+            }
+            Log(LogTypeEnum.FATAL, (string)message, null);
         }
         public void Fatal(object message, Exception exception)
         {
@@ -173,7 +178,7 @@ namespace LogWriter4.Logger
             }
 
             string message = new SystemStringFormat(CultureInfo.InvariantCulture, format, args).ToString();
-            Log(LogWriter4.Logger.LogTypeEnum.DEBUG, message, null);
+            Log(LogTypeEnum.FATAL, message, null);
         }
 
         #endregion

@@ -19,8 +19,8 @@ namespace LogWriter4
                 LoadExtensions = false
             };
 
-            // change DesignTimeModule to run other implementation ProductionModule
-            IOCContainer.Instance.Initialize(settings, new DesignTimeModule());
+            // change DesignTimeModule to run other implementation ProductionModule || DebugModule
+            IOCContainer.Instance.Initialize(settings, new DebugModule());
         }
         #endregion Initialize DI Container
 
@@ -29,7 +29,7 @@ namespace LogWriter4
             try
             {
                 InitializeDiContainer();
-               // DIContainer.IOCContainer.Instance.Get<LogWriter4.Interface.ILogger>().IsDebugEnabled = false;
+               // DIContainer.IOCContainer.Instance.Get<ILogger>().
                 DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
                 DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}Main's runnin'...{0}", Environment.NewLine);
                 DIContainer.IOCContainer.Instance.Get<IMyFakeService>().DoSomething(123);

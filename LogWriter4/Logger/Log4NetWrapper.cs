@@ -4,26 +4,11 @@ using LogWriter4.Core.Interface;
 
 namespace LogWriter4.Logger
 {
-    class Log4NetWrapper : ILogger
+    class Log4NetWrapper : BaseLogger, ILogger
     {
         #region Properties and ILog Properties
 
-        private static readonly log4net.ILog _log;
-
-        public LogLevelEnum LogLevel
-        {
-            get { return LogLevelEnum.Debug; }
-            set { }
-        }
-
-        private string TimeStamp
-        {
-            get
-            {
-                string timeStamp = string.Format("{0:HH:mm:ss.fff}", DateTime.Now);
-                return timeStamp;
-            }
-        }
+        private static log4net.ILog _log;
 
         public bool IsDebugEnabled { get { return (LogLevel <= LogLevelEnum.Debug); } }
         public bool IsInfoEnabled { get { return (LogLevel <= LogLevelEnum.Info); } }
@@ -35,8 +20,9 @@ namespace LogWriter4.Logger
 
         #region Constructor Methods
 
-        static Log4NetWrapper()
+        public Log4NetWrapper(LogLevelEnum loglevel)
         {
+            this.LogLevel = loglevel;
             _log = LogManager.GetLogger("Log4NetLogger");
             log4net.Config.XmlConfigurator.Configure();
         }

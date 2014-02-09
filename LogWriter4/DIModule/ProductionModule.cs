@@ -10,7 +10,8 @@ namespace LogWriter4.DIModule
     {
         public override void Load()
         {
-            Bind<ILogger>().To<ConsoleLogger>().InSingletonScope();
+            Bind<ILogger>().To<ConsoleLogger>().InSingletonScope()
+                .WithConstructorArgument("loglevel", LogLevelEnum.Fatal);
 
             Bind<IMyFakeService>().To<MyFakeService>().InSingletonScope();
             Bind<IMyOtherService>().To<MyOtherService>().InSingletonScope();
