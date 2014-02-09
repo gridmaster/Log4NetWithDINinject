@@ -38,3 +38,25 @@ D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Ni
 D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Ninject.Extensions.Logging.pdb
 D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\bin\Debug\Ninject.Extensions.Logging.xml
 D:\Projects\Ninject Projects\Log4NetWithDINinject-master\LogWriter4\obj\Debug\LogWriter4.csprojResolveAssemblyReference.cache
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\LogWriter4.exe.config
+D:\Projects\Log4NetWithDINinject\LogWriter4\obj\Debug\LogWriter4.exe
+D:\Projects\Log4NetWithDINinject\LogWriter4\obj\Debug\LogWriter4.pdb
+D:\Projects\Log4NetWithDINinject\LogWriter4\obj\Debug\LogWriter4.csprojResolveAssemblyReference.cache
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\LogWriter4.exe
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\LogWriter4.pdb
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Core.dll
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\DIContainer.dll
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\log4net.dll
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Logger.dll
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Ninject.dll
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Ninject.Extensions.Logging.dll
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Services.dll
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Core.pdb
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\DIContainer.pdb
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Logger.pdb
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Services.pdb
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\log4net.xml
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Ninject.pdb
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Ninject.xml
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Ninject.Extensions.Logging.pdb
+D:\Projects\Log4NetWithDINinject\LogWriter4\bin\Debug\Ninject.Extensions.Logging.xml

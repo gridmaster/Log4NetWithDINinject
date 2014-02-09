@@ -1,5 +1,5 @@
-﻿using LogWriter4.Core.Interface;
-using LogWriter4.Logger;
+﻿using Logger;
+using LogWriter4.Core.Interface;
 using Ninject.Modules;
 using Services.Interface;
 using Services.Service;

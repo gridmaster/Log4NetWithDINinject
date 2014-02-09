@@ -30,7 +30,8 @@ namespace LogWriter4
             {
                 InitializeDiContainer();
                // DIContainer.IOCContainer.Instance.Get<ILogger>().
-                DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+                DIContainer.IOCContainer.Instance.Get<ILogger>()
+                    .InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
                 DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}Main's runnin'...{0}", Environment.NewLine);
                 DIContainer.IOCContainer.Instance.Get<IMyFakeService>().DoSomething(123);
                 DIContainer.IOCContainer.Instance.Get<IMyOtherService>().DoSomethingElse(456);
@@ -42,7 +43,8 @@ namespace LogWriter4
             finally
             {
                 DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}Main's done'...{0}", Environment.NewLine);
-                DIContainer.IOCContainer.Instance.Get<ILogger>().InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
+                DIContainer.IOCContainer.Instance.Get<ILogger>()
+                    .InfoFormat("{0}********************************************************************************{0}", Environment.NewLine);
 
                 Console.ReadKey();
             }

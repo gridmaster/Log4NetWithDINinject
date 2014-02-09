@@ -4,3 +4,27 @@ Main's done'...
 2014-02-09 12:11:09,078 [11] DEBUG  
 ********************************************************************************
 
+2014-02-09 12:43:46,199 [10] INFO   
+********************************************************************************
+
+2014-02-09 12:43:46,222 [10] INFO   
+Main's runnin'...
+
+2014-02-09 12:43:46,228 [10] DEBUG  
+write something here: I did something...
+2014-02-09 12:43:46,230 [10] ERROR  Unable to process MyFakeService.DoSomething
+surveyId: 1
+token: 123
+Error Message!
+2014-02-09 12:43:46,232 [10] DEBUG  
+write something here: I did something else...
+2014-02-09 12:43:46,232 [10] ERROR  Unable to process MyOtherService.DoSomethingElse
+surveyId: 1
+token: 456
+Other Message!
+2014-02-09 12:43:46,233 [10] INFO   
+Main's done'...
+
+2014-02-09 12:43:46,233 [10] INFO   
+********************************************************************************
+

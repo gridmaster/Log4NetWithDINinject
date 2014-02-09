@@ -1,12 +1,12 @@
-﻿using LogWriter4.Core.Interface;
-using LogWriter4.Logger;
+﻿using Logger;
+using LogWriter4.Core.Interface;
 using Ninject.Modules;
 using Services.Interface;
 using Services.Service;
 
 namespace LogWriter4.DIModule
 {
-    class ProductionModule : NinjectModule
+    public class ProductionModule : NinjectModule
     {
         public override void Load()
         {
